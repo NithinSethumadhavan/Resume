@@ -1,0 +1,234 @@
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+\usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.85in]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{palatino}
+\usepackage{tabularx}
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage[T1]{fontenc}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+%-----------------------------------------------------------
+
+\begin{document}
+\hspace{0.5cm}\\[-0.2cm]
+
+\vspace{4.8cm}
+
+%\resheading{\textbf{OBJECTIVE} }\\[\lsep]
+%\begin{itemize}
+%  \item \noindent R \& D
+%\end{itemize}
+
+\resheading{\textbf{FIELDS OF INTEREST} }\\[\lsep]
+\begin{itemize}
+\item \noindent Functional Programming, Algorithms, Machine Learning
+\end{itemize}
+
+\resheading{\textbf{WORK EXPERIENCE} }\\[\lsep]
+\begin{itemize}
+	\item \noindent \textbf{RA through Project, NVLI}\\
+	\emph{Dept. of CSE, IIT Bombay, Mumbai \hfill (July 2016 - Present)}\\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+		\item \noindent Responsible for Developing several Modules in the Collaborating communities Project
+		\item \noindent Handling the Configuration and Deployement of Collaborating communities
+		\item \noindent Developed several Django APIs for IITBombayX education platform.
+
+	\end{itemize}
+	
+	\item \noindent \textbf{Software Engineer}\\
+	\emph{Samsung R & D, Banglore \hfill (June 2014 - July 2015)}\\[-0.6cm]
+	\begin{itemize} \itemsep \isep
+		\item \noindent {
+			Invoice Management System
+			\begin{itemize}
+				\item Co-developer for POC Android applications to display Documents on Android TV and send it to the printer using mobile as controller.
+			\end{itemize}
+		}
+		\item \noindent {
+			LDAP Authentication for printers
+			\begin{itemize}
+				\item Studied and modified an existing application for smartcard Authentication in Smart printers.
+			\end{itemize}
+		}
+	\end{itemize}
+	\item \noindent \textbf{Summer Intern}\\
+	\emph{Goldman Sachs, Banglore \hfill (May 2011 - June 2011)}\\[-0.6cm]
+	\begin{itemize}
+	    \item \noindent{
+	    Developed a health-check application for Informatica Powercenter.
+	    }
+	\end{itemize}
+
+	%\item \noindent Worked on multiple Enterprise web and mobile based applications using agile development methodology
+	%\item \noindent Full stack development of a single page web application for invoice management system.
+	%Front end development using Knockout.js and back end API development using Spring MVC framework with MongoDB as a data store.
+	%\item \noindent Worked on cross platform mobile app which is one of the top rated travel app using Calatrava framework. Maintained and improved build and deployment scripts written in Rake and Gradle. Developed CI pipelines involving multiple platforms such as Android, iOS, Mobile web and Blackberry with multiple releases across multiple environments. Developed Adapter layer to change XML responses to JSON responses to keep apps light.
+	%\item \noindent Using state of the art practices such as Test Driven Development, Refactoring, Continuous Integration and Continuous Delivery.
+	%\item Developed core adapter layer to minimize amount of data sent to mobile based client applications
+	
+	
+
+\end{itemize}
+
+\resheading{\textbf{MAJOR PROJECTS AND SEMINAR} }\\[\lsep]
+\begin{itemize}
+\itemsep \isep
+ 
+\item \textbf{Formal Verification of Haskell Programs} (M.Tech. Project and Seminar) \\
+ \emph{Guide: Prof. Amitabha Sanyal (IIT Bombay) \& Prof. Amey Karkare  (IIT Kanpur)\hfill (May 2017 - Present)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Objective: To write a tool that can statically prove assertions present in a given Haskell program.
+	\item Adopted Symbolic Execution with Bounded Model Checking approach in-line with CBMC: A Bounded Model Checker for C, C++ programs.
+	\item Implemented the system that translates constraints from Haskell programs to CVC4 scripts via SMTLib interface.
+	\item Currently generating constraints via Lazy Symbolic Execution.
+	\item Major challenges for the upcoming future work are Higher Order Functions, Lazy Evaluation, Typeclasses and Monads.
+	\end{itemize}
+
+\item \textbf{Security Analysis in Java} (R & D Project) \\
+ \emph{Guide: Prof. Amitabha Sanyal (IIT Bombay) \& Prof. Amey Karkare  (IIT Kanpur) \hfill (Jan - April 2017)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Used Datalog to perform escape and taint analysis of Java programs.
+	\end{itemize}
+
+%\newpage
+\item \textbf{Movie Recommendation Engine
+} (B. Tech. Project) \\
+ \emph{Guide: \hfill (June 2013 - April 2014)} \\[-0.6cm]
+ 	\begin{itemize}\itemsep \isep
+	\item Developed a system that retrieves users movie ratings and likes from their social media profile
+	\item The system fetches publicly available ratings and likes from the user's friends as well.
+  	\item This data is used to find friends with similar movie taste as the User and to recommend movies.
+  	%\item ElasticSearch for indexing the repository of videos 
+	\end{itemize}
+
+\end{itemize}
+
+\resheading{\textbf{COURSE PROJECTS} }\\[\lsep]
+\begin{itemize}
+\itemsep \isep
+	\item \textbf{Studying Lambda Learner} \hfill\emph{(CS613: Functional Programming , Autumn 2016)}\\[-0.4cm]
+	\begin{itemize}\itemsep \isep
+		\item Surveyed paper on Lambda Learner
+		\item Configured, run and bench-marked the Lambda Learner tool.
+	\end{itemize}
+	
+	
+	\item \textbf{Intelligent Carom Playing Agent} \hfill\emph{(CS747: Intelligent and Learning Agents, Autumn 2016)}\\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+		\item Objective: To develop a learning agent to play the game carom.
+	\end{itemize}	
+	
+	\item \textbf{Tool for Latex Table manipulation} \hfill\emph{(CS 699: Software Lab, Autumn 2016)}\\[-0.4cm]
+	\begin{itemize}\itemsep \isep
+	    \item Developed a tool to perform operations on Latex table given a tex file and a table number.
+	    \item Operations include transposing a table, adding columns, rows, etc.
+	\end{itemize}
+
+	\item \textbf{Music Genre Classification} \hfill\emph{(CS725: Foundations of Machine Learning, Spring 2017)}\\[-0.4cm]
+	\begin{itemize}\itemsep \isep
+	    \item Classify music into genres like rock, pop etc using deep learning models and comparing the results.
+	\end{itemize}
+
+	\item \textbf{Headline Prediction from News Articles} \hfill\emph{(CS726: Advanced Machine Learning, Spring 2018)}\\[-0.4cm]
+	\begin{itemize}\itemsep \isep
+	    \item Developed a model to generate headlines from newspaper articles and compared the results with existing models.
+	    \item 
+
+	\end{itemize}
+	
+%\item \textbf{Title} \hfill\emph{(Course code: Course Name)}
+%  	\begin{itemize}\itemsep \isep
+%	\item 
+
+\end{itemize}
+
+
+
+
+ 
+
+	
+
+
+\resheading{\textbf{POSITION OF RESPONSIBILITY} }\\[\lsep]
+\begin{itemize} \itemsep \isep
+	\item \noindent \textbf{Web Coordinator for Institute Placement Team 2017-18} \\[-1.7em]
+	\begin{itemize} \itemsep \isep
+		\item Updated and maintained 6-year-old legacy placement portal for 2016-17 placement season via necessary configuration changes.
+		\item Developed new features according to the new policy in JSP with MySQL as backend.
+		\item Developed a new tool - Job allocator for easier allocation of jobs.
+	\end{itemize}
+
+
+\end{itemize}
+
+\resheading{\textbf{TECHNICAL SKILLS} }\\[\lsep]
+\begin{itemize} \itemsep \isep
+	\item \noindent \textbf{Programming Languages:} Haskell, JAVA, C++, Shell
+	\item \textbf{Tools:} Vim, Git, \LaTeX, Ansible
+
+%	\item \textbf{Frameworks:} Spring,  Android
+%	\item \textbf{Databases:} MongoDB, MySQL
+%	\item \noindent \textbf{Web Technologies:} HTML, CSS, HAML, SASS
+	% include version numbers
+\end{itemize}
+
+
+
+\resheading{\textbf{COURSES TAKEN} }\\[\lsep]
+\begin{center}
+\begin{table}[htb]
+\begin{tabularx}{\textwidth}{Y Y Y}
+Algorithms and Complexity & Design and Implementation of Functional Programming & Foundations of Machine Learning \\
+Foundations of Intelligent and Learning Agents & Program Analysis & Advanced Machine Learning\\[-0.8cm]
+\end{tabularx}
+\end{table}
+\end{center}
+
+
+%\item \noindent Hobbies: Playing Tabla, Table Tennis, Numismatic.
+
+%\resheading{\textbf{LANGUAGES KNOWN} }\\[\lsep]
+%\begin{itemize}
+%\item \noindent English, French, Hindi, Marathi
+%\end{itemize}
+
+%\resheading{\textbf{INTEREST AND HOBBIES} }\\[\lsep]
+%\begin{itemize}
+%\item \noindent Learning Languages.
+%\item \noindent Watching Movies.
+%\item \noindent Reading.
+
+%\end{itemize}
+
+\end{document}
+

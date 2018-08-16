@@ -1,0 +1,146 @@
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+\usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.85in]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{palatino}
+\usepackage{tabularx}
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage[T1]{fontenc}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+%-----------------------------------------------------------
+
+\begin{document}
+\hspace{0.5cm}\\[-0.2cm]
+
+\vspace{3.8cm}
+
+%\resheading{\textbf{OBJECTIVE} }\\[\lsep]
+%\begin{itemize}
+%  \item \noindent R \& D
+%\end{itemize}
+
+\resheading{\textbf{FIELDS OF INTEREST} }\\[\lsep]
+\begin{itemize}
+\item \noindent Functional Programming, Algorithms, Machine Learning
+\end{itemize}
+
+\resheading{\textbf{WORK EXPERIENCE} }\\[\lsep]
+\begin{itemize}
+	\item \noindent \textbf{RA through Project}\\
+	\emph{Dept. of CSE, IIT Bombay, Mumbai \hfill (July 2016 - Present)}\\[-0.6cm]
+	\item \noindent \textbf{Software Engineer}\\
+	\emph{Samsung R & D, Banglore \hfill (June 2014 - July 2015)}\\[-0.6cm]
+    \item \noindent \textbf{Intern}\\
+	\emph{Goldman Sachs \hfill (June 2013 - July 2013)}\\[-0.4cm]
+\end{itemize}
+
+
+\resheading{\textbf{MAJOR PROJECTS AND SEMINAR} }\\[\lsep]
+\begin{itemize}
+\itemsep \isep
+ 
+\item \textbf{Formal Verification of Haskell Programs} (M.Tech. Project and Seminar) \\
+ \emph{Guide: Prof. Amitabha Sanyal (IIT Bombay) \& Prof. Amey Karkare  (IIT Kanpur)\hfill (Dec 2017 - Present)} \\[-0.6cm]
+	\begin{itemize}\itemsep \isep
+	\item Objective: To write a tool that can statically prove assertions present in a given Haskell program
+	\end{itemize}
+
+\item \textbf{Security Analysis of Java } (R & D Project) \\
+ \emph{Guide: Prof. Amitabha Sanyal (IIT Bombay) \& Prof. Amey Karkare  (IIT Kanpur) \hfill (July - December 2017)}
+
+\item \textbf{Movie Recommendation Engine 
+} (B. Tech. Project) \\
+ \emph{Guide:  \hfill (June 2013 - May 2014)} \\[-0.6cm]
+ 	\begin{itemize}\itemsep \isep
+	\item Developed a system that recommends movies to users based on their social media preferences. \\[-0.4cm]
+%	\item Used a novel layered filtering approach based on various features of key frames present in videos
+%  	\item A large repository of videos was processed using Hadoop Map-Reduce framework 
+%  	\item Features were extracted from key frames of videos using JavaCV and histogram based matching was used for comparison
+%  	%\item ElasticSearch for indexing the repository of videos 
+	\end{itemize}
+
+\end{itemize}
+
+\resheading{\textbf{COURSE PROJECTS} }\\[\lsep]
+\begin{itemize}
+\itemsep \isep
+	\item \textbf{Studying Labda Learner} \hfill\emph{(CS613: Functional Programming , Autumn 2016)}\\[-0.4cm]
+	
+	\item \textbf{Intelligent Carrom Playing Agent} \hfill\emph{(CS747: Intelligent and Learning Agents, Autumn 2016)}\\[-0.4cm]
+	
+	\item \textbf{Tool for Latex Table manipulation} \hfill\emph{(CS 699: Software Lab, Autumn 2016)}\\[-0.4cm]
+
+	\item \textbf{Music Genre Classification} \hfill\emph{(CS725: Foundations of Machine Learning, Spring 2017)}\\[-0.4cm]
+
+	\item \textbf{Headline Prediction from News Articles} \hfill\emph{(CS726: Advanced Machine Learning, Spring 2018)}\\[-0.4cm]
+
+\end{itemize}
+
+
+
+ 
+
+	
+%\end{itemize}
+
+%\resheading{\textbf{STRENGTHS} }\\[\lsep]
+%\begin{itemize}
+%\item \noindent Positive Attitude, Social Interaction, Hardworking.
+%\end{itemize}
+
+\resheading{\textbf{POSITION OF RESPONSIBILITY} }\\[\lsep]
+\begin{itemize} \itemsep \isep
+	\item \noindent \textbf{Web Co-ordinator for Institute Placement Team 2016-17} \\[-0.4cm]
+	\item \noindent \textbf{Mentored 3 Interns during Summer 2017} \\[-0.4cm]	
+	\item \noindent \textbf{Co-Mentored 6 Interns during Summer 2018} \\[-0.4cm]		
+%	\begin{itemize} \itemsep \isep
+%		\item Updated and maintained 6-year-old legacy placement portal for 2016-17 placement season via necessary configuration changes
+%		\item Developed new features according to the new policy in JSP with MySQL as backend
+%		\item Installed and maintained a backup server to take daily backups of database
+%	\end{itemize}
+
+
+\end{itemize}
+
+\resheading{\textbf{TECHNICAL SKILLS} }\\[\lsep]
+\begin{itemize} \itemsep \isep
+	\item \noindent \textbf{Programming Languages:} Haskell, JAVA , C++, Python, Shell
+	\item \textbf{Tools:} Vim, Git, Ansible, \LaTeX
+
+\end{itemize}
+
+
+
+
+
+\end{document}
+
